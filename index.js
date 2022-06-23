@@ -10,7 +10,9 @@ app.post('/',(req,res)=>{
 app.put('/user',(req,res)=>{
     res.send('This is just a put request');
 });
-
+app.delete('/user',(req,res)=>{
+    res.send('We get a delete request');
+});
 
 app.listen(3000,()=>{
     console.log('Running on Port:'+3000);
