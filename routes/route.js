@@ -23,7 +23,12 @@ app.get('/random.text',(req,res)=>{
     res.send('random.text');
 });
 
-
+/**
+ * Route path abcd or acd
+ */
+app.get('/ab?cd',(req,res)=>{
+    res.send('ab?cd');
+});
 
 /**
  * Running server port in 3000
