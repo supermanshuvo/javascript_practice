@@ -17,6 +17,15 @@ app.get('/about',(req,res)=>{
 })
 
 /**
+ * Random.text route
+ */
+app.get('/random.text',(req,res)=>{
+    res.send('random.text');
+});
+
+
+
+/**
  * Running server port in 3000
  */
 app.listen(port,()=>{
