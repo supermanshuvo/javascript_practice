@@ -6,6 +6,12 @@ app.get('/',(req,res)=>{
 app.post('/',(req,res)=>{
    res.send('This is post request');
 });
+
+app.put('/user',(req,res)=>{
+    res.send('This is just a put request');
+});
+
+
 app.listen(3000,()=>{
     console.log('Running on Port:'+3000);
 });
