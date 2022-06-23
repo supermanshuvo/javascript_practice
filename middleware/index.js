@@ -14,10 +14,11 @@ app.get('/',(req,res)=>{
 
 */
 
-const requestTime = function (req,res,next){
-    res.requestTime = Date.now();
-    next();
-};
+const requestTime = function (req, res, next) {
+    req.requestTime = Date.now()
+    next()
+}
+
 app.use(requestTime)
 
 app.get('/', (req, res) => {
