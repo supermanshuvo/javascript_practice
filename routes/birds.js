@@ -13,3 +13,8 @@ router.use((req,res,next)=>{
 router.get('/',(req,res)=>{
     res.send('Home page birds');
 });
+
+/// define the about route
+router.get('/about', (req, res) => {
+    res.send('About birds');
+});
