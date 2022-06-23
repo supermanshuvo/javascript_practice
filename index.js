@@ -4,6 +4,14 @@ const app = express();
 
 app.use(express.static('public'));
 
+/**
+ * all route in her app.all()
+ */
+app.all('/secret',(req,res,next)=>{
+    console.log('I am in secret route all');
+    next();
+});
+
 app.get('/',(req,res)=>{
     res.send('shuvo is learning node js');
 });
