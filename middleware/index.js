@@ -6,7 +6,7 @@ const myLogger = function (req,res,next){
     console.log('Logged');
     next();
 };
-
+app.use(myLogger);
 
 app.get('/',(req,res)=>{
     res.send('This is runnig in middleware file');
