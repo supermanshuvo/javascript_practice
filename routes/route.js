@@ -64,8 +64,19 @@ app.get('/example/a',(req,res)=>{
 });
 */
 
+/**
+ * More than one callback function can handle a route
+ */
+app.get('/example/b', (req, res, next) => {
+    console.log('the response will be sent by the next function ...')
+    next()
+}, (req, res) => {
+    res.send('Hello from B!')
+})
 
-
+app.get('/test',(req,res)=>{
+    res.send('Testing the work is ok or not');
+});
 /**
  * Running server port in 3000
  */
