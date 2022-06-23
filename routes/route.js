@@ -58,9 +58,13 @@ app.get(/.*fly$/, (req, res) => {
 /**
  * Single call back function can handle a route
  */
+/*
 app.get('/example/a',(req,res)=>{
-    res.send('Hello From a')
+    res.send('Hello From ');
 });
+*/
+
+
 
 /**
  * Running server port in 3000
