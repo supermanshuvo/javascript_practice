@@ -1,8 +1,8 @@
 const express = require('express');
-const {static} = require("express");
+// const {static} = require("express");
 const app = express();
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 /**
  * all route in her app.all()
