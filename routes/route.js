@@ -30,6 +30,31 @@ app.get('/ab?cd',(req,res)=>{
     res.send('ab?cd');
 });
 
+
+
+
+app.get('/ab+cd',(req,res)=>{
+    res.send('ab+cd');
+});
+
+app.get('/ab*cd',(req,res)=>{
+    res.send('ab*cd');
+});
+
+
+app.get('/ab(cd)?e', (req, res) => {
+    res.send('ab(cd)?e');
+});
+
+
+app.get(/a/, (req, res) => {
+    res.send('/a/');
+});
+
+app.get(/.*fly$/, (req, res) => {
+    res.send('/.*fly$/');
+});
+
 /**
  * Running server port in 3000
  */
