@@ -1,0 +1,24 @@
+{
+  "name": "javascript_practice",
+  "version": "1.0.0",
+  "description": "Basic JavaScript understanding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supermanshuvo/javascript_practice.git"
+  },
+  "keywords": [],
+  "author": "Superman Shuvo <shuvothesuperman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supermanshuvo/javascript_practice/issues"
+  },
+  "homepage": "https://github.com/supermanshuvo/javascript_practice#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
