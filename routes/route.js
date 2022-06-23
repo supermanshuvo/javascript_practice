@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
+const birds = require('./birds');
 const port = 3000;
+
+/**
+ * Birds router
+ */
+app.use('/birds',birds);
+
 /**
  * app get request
  */
