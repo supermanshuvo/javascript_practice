@@ -9,6 +9,14 @@ app.get('/',(req,res)=>{
 });
 
 /**
+ * About Route
+ */
+
+app.get('/about',(req,res)=>{
+    res.send('About page');
+})
+
+/**
  * Running server port in 3000
  */
 app.listen(port,()=>{
